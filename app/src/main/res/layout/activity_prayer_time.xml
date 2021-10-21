@@ -1,0 +1,521 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fajr"
+    tools:context=".activitys.PrayerTimeActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:padding="8dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:background="@color/colorAccent"
+            >
+
+            <ImageView
+                android:id="@+id/prayer_time_finish"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_baseline_arrow_back_24"
+                android:backgroundTint="@color/black"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Namoz vaqtlari"
+                android:textSize="20sp"
+                android:layout_marginStart="10dp"
+                android:textStyle="bold"/>
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_fp_calendar"
+                android:backgroundTint="@color/black"
+                android:layout_marginRight="20dp"
+                />
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/prayer"
+                android:backgroundTint="@color/black"
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:id="@+id/time_date_container"
+                android:gravity="center"
+                android:layout_margin="70dp"
+                >
+
+                <TextView
+                    android:id="@+id/time_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10d 7h 15m 15s"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/date_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/_10th_july"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#5CF8F8F8"
+                android:layout_marginTop="20.0dip">
+
+
+                <androidx.cardview.widget.CardView
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="15.0dip"
+
+                    android:layout_marginTop="10.0dip"
+                    android:layout_marginRight="15.0dip"
+                    android:layout_marginBottom="10.0dip"
+                    android:layout_marginHorizontal="15.0dip">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:background="?selectableItemBackground"
+                        android:paddingTop="10.0dip"
+                        android:paddingBottom="10.0dip"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:paddingVertical="10.0dip">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:focusable="true"
+                            android:focusableInTouchMode="true"
+                            android:clickable="true"
+                            android:layout_width="20.0dip"
+                            android:layout_height="20.0dip"
+                            android:src="@drawable/ic_baseline_arrow_back_ios_24"
+                            android:layout_marginStart="15dp"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:textSize="18.0sp"
+                            android:textColor="#66181818"
+                            android:gravity="center"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:clickable="false"
+                            android:layout_width="0.0dip"
+                            android:layout_height="wrap_content"
+                            android:text="hijri calendar"
+                            android:layout_weight="1.0"
+                            android:fontFamily="@font/poppins_bold"
+                            android:layout_marginStart="15.0dip"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            />
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:focusable="true"
+                            android:focusableInTouchMode="true"
+                            android:clickable="true"
+                            android:layout_width="20.0dip"
+                            android:layout_height="20.0dip"
+                            android:src="@drawable/ic_baseline_arrow_forward_ios_24"
+                            android:layout_marginEnd="15dp"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:clickable="true"
+                    app:cardCornerRadius="20sp"
+                    android:focusable="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15.0dip"
+                    android:layout_marginTop="10.0dip"
+                    android:layout_marginRight="15.0dip"
+                    android:layout_marginBottom="10.0dip"
+                    android:layout_marginHorizontal="15.0dip">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:background="?selectableItemBackground"
+                        android:paddingTop="10.0dip"
+                        android:paddingBottom="10.0dip"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:paddingVertical="10.0dip">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:clickable="false"
+                            android:layout_width="20.0dip"
+                            android:layout_height="20.0dip"
+                            android:src="@drawable/time"
+                            android:layout_marginStart="15dp"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:textSize="12.0sp"
+                            android:textColor="#66181818"
+                            android:gravity="start"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:clickable="false"
+                            android:layout_width="0.0dip"
+                            android:layout_height="wrap_content"
+                            android:text="share_the_app"
+                            android:layout_weight="1.0"
+                            android:fontFamily="@font/opensans_light"
+                            android:layout_marginStart="15.0dip"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:textSize="12.0sp"
+                            android:layout_marginEnd="10dp"
+                            android:textColor="#66181818"
+                            android:gravity="end"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:clickable="false"
+                            android:layout_width="0.0dip"
+                            android:layout_height="wrap_content"
+                            android:text="share_the_app"
+                            android:layout_weight="1.0"
+                            android:fontFamily="@font/opensans_light"
+                            android:layout_marginStart="15.0dip"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    app:cardCornerRadius="20dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15.0dip"
+                    android:layout_marginTop="10.0dip"
+                    android:layout_marginRight="15.0dip"
+                    android:layout_marginBottom="10.0dip"
+                    android:layout_marginHorizontal="15.0dip">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:background="?selectableItemBackground"
+                        android:paddingTop="10.0dip"
+                        android:paddingBottom="10.0dip"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:paddingVertical="10.0dip">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:clickable="false"
+                            android:layout_width="20.0dip"
+                            android:layout_height="20.0dip"
+                            android:src="@drawable/time"
+                            android:layout_marginStart="15dp"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:textSize="12.0sp"
+                            android:textColor="#66181818"
+                            android:gravity="start"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:clickable="false"
+                            android:layout_width="0.0dip"
+                            android:layout_height="wrap_content"
+                            android:text="share_the_app"
+                            android:layout_weight="1.0"
+                            android:fontFamily="@font/opensans_light"
+                            android:layout_marginStart="15.0dip"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:textSize="12.0sp"
+                            android:layout_marginEnd="10dp"
+                            android:textColor="#66181818"
+                            android:gravity="end"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:clickable="false"
+                            android:layout_width="0.0dip"
+                            android:layout_height="wrap_content"
+                            android:text="share_the_app"
+                            android:layout_weight="1.0"
+                            android:fontFamily="@font/opensans_light"
+                            android:layout_marginStart="15.0dip"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:clickable="true"
+                    app:cardCornerRadius="20dp"
+                    android:focusable="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15.0dip"
+                    android:layout_marginTop="10.0dip"
+                    android:layout_marginRight="15.0dip"
+                    android:layout_marginBottom="10.0dip"
+                    android:layout_marginHorizontal="15.0dip">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:background="?selectableItemBackground"
+                        android:paddingTop="10.0dip"
+                        android:paddingBottom="10.0dip"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:paddingVertical="10.0dip">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:clickable="false"
+                            android:layout_width="20.0dip"
+                            android:layout_height="20.0dip"
+                            android:layout_marginStart="15dp"
+                            android:src="@drawable/time"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:textSize="12.0sp"
+                            android:textColor="#66181818"
+                            android:gravity="start"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:clickable="false"
+                            android:layout_width="0.0dip"
+                            android:layout_height="wrap_content"
+                            android:text="share_the_app"
+                            android:layout_weight="1.0"
+                            android:fontFamily="@font/opensans_light"
+                            android:layout_marginStart="15.0dip"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:textSize="12.0sp"
+                            android:layout_marginEnd="10dp"
+                            android:textColor="#66181818"
+                            android:gravity="end"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:clickable="false"
+                            android:layout_width="0.0dip"
+                            android:layout_height="wrap_content"
+                            android:text="share_the_app"
+                            android:layout_weight="1.0"
+                            android:fontFamily="@font/opensans_light"
+                            android:layout_marginStart="15.0dip"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    app:cardCornerRadius="20dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15.0dip"
+                    android:layout_marginTop="10.0dip"
+                    android:layout_marginRight="15.0dip"
+                    android:layout_marginBottom="10.0dip"
+                    android:layout_marginHorizontal="15.0dip">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:background="?selectableItemBackground"
+                        android:paddingTop="10.0dip"
+                        android:paddingBottom="10.0dip"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:paddingVertical="10.0dip">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:clickable="false"
+                            android:layout_width="20.0dip"
+                            android:layout_height="20.0dip"
+                            android:src="@drawable/time"
+                            android:layout_marginStart="15dp"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:textSize="12.0sp"
+                            android:textColor="#66181818"
+                            android:gravity="start"
+                            android:focusable="true"
+                            android:focusableInTouchMode="false"
+                            android:clickable="false"
+                            android:layout_width="0.0dip"
+                            android:layout_height="wrap_content"
+                            android:text="share_the_app"
+                            android:layout_weight="1.0"
+                            android:fontFamily="@font/opensans_light"
+                            android:layout_marginStart="15.0dip"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:textSize="12.0sp"
+                            android:layout_marginEnd="10dp"
+                            android:textColor="#66181818"
+                            android:gravity="end"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:clickable="false"
+                            android:layout_width="0.0dip"
+                            android:layout_height="wrap_content"
+                            android:text="share_the_app"
+                            android:layout_weight="1.0"
+                            android:fontFamily="@font/opensans_light"
+                            android:layout_marginStart="15.0dip"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    app:cardCornerRadius="20dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15.0dip"
+                    android:layout_marginTop="10.0dip"
+                    android:layout_marginRight="15.0dip"
+                    android:layout_marginBottom="10.0dip"
+                    android:layout_marginHorizontal="15.0dip">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:background="?selectableItemBackground"
+                        android:paddingTop="10.0dip"
+                        android:paddingBottom="10.0dip"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:paddingVertical="10.0dip">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:clickable="false"
+                            android:layout_width="20.0dip"
+                            android:layout_height="20.0dip"
+                            android:layout_marginStart="15dp"
+                            android:src="@drawable/time"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:textSize="12.0sp"
+                            android:textColor="#66181818"
+                            android:gravity="start"
+                            android:focusable="false"
+                            android:focusableInTouchMode="true"
+                            android:clickable="false"
+                            android:layout_width="0.0dip"
+                            android:layout_height="wrap_content"
+                            android:text="share_the_app"
+                            android:layout_weight="1.0"
+                            android:fontFamily="@font/opensans_light"
+                            android:layout_marginStart="15.0dip"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:textSize="12.0sp"
+                            android:layout_marginEnd="10dp"
+                            android:textColor="#66181818"
+                            android:gravity="end"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:clickable="false"
+                            android:layout_width="0.0dip"
+                            android:layout_height="wrap_content"
+                            android:text="share_the_app"
+                            android:layout_weight="1.0"
+                            android:fontFamily="@font/opensans_light"
+                            android:layout_marginStart="15.0dip"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</FrameLayout>

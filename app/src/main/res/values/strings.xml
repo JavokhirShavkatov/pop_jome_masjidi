@@ -1,0 +1,27 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">PopJomeMasjidi</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="_10th_july">10th july</string>
+    <string name="calendar_events">Calendar Events</string>
+    <string name="location_permission_message">Location permission is needed to show direction</string>
+    <string name="location_permission_title">Permission Required!</string>
+    <string name="ilovaniUlashish">Ilovani ulashish</string>
+
+
+    <string name="permission_not_garanted">not granted</string>
+    <string name="gps_settings_title">Qibla compassidan foydalanish uchun GPS ni yoqing</string>
+    <string name="gps_settings_text" />
+    <string name="ok">OK</string>
+    <string name="cancel" tools:ignore="ButtonCase">cancel</string>
+    <string name="coord">coord</string>
+    <string name="latitude">latitude</string>
+    <string name="locationunready">loc ready</string>
+    <string name="qibladirection">qibla</string>
+    <string name="fromnorth">gradus shimoldan</string>
+    <string name="gpsplz">gpsplz</string>
+    <string name="longitude">longitude</string>
+    <string name="lastlocation">last location</string>
+    <string name="permissiongaranted">granted</string>
+    <string name="_1">1</string>
+    <string name="title_activity_maps">MapsActivity</string>
+</resources>

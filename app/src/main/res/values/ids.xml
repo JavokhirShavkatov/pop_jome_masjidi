@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="ivQiblaDirection" type="id" />
+    <item name="tvHeading" type="id" />
+    <item name="layout_dua" type="id" />
+    <item name="all_duas" type="id" />
+    <item name="saved_duas" type="id" />
+    <item name="tv_all_duas" type="id" />
+    <item name="saved_dua_img" type="id" />
+    <item name="tv_saved_duas" type="id" />
+    <item name="btnConfirm" type="id" />
+</resources>
