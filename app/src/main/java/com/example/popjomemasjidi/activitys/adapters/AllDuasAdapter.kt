@@ -32,8 +32,9 @@ class AllDuasAdapter(courseModalArrayList: ArrayList<AllDuasModel>, context: Con
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val modal: AllDuasModel = courseModalArrayList[position]
+
         holder.itemView.setOnClickListener {
-            val intent = Intent(it.context,DuaDetailsActivity::class.java)
+            val intent = Intent(it.context, DuaDetailsActivity::class.java)
             intent.putExtra("extra_data",modal)
             it.context.startActivity(intent)
         }

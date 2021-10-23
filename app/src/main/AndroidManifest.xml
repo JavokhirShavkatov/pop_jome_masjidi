@@ -21,6 +21,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PopJomeMasjidi">
         <activity
+            android:name=".activitys.SavedDuasActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activitys.DuaDetailsActivity"
+            android:exported="false" />
+        <activity
             android:name=".activitys.MainMapsActivity"
             android:exported="false" />
         <!--
@@ -47,9 +53,6 @@
             android:exported="true" />
         <activity
             android:name=".activitys.ActivityForNamazDetails"
-            android:exported="true" />
-        <activity
-            android:name=".activitys.DuaDetailsActivity"
             android:exported="true" />
         <activity
             android:name=".activitys.SearchAllDuasActivity"

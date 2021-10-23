@@ -40,5 +40,10 @@ class DuolarActivity : AppCompatActivity() {
             val intent = Intent(it.context,SearchAllDuasActivity::class.java)
             it.context.startActivity(intent)
         }
+
+        binding.savedDuas.setOnClickListener {
+            val intent = Intent(it.context,SavedDuasActivity::class.java)
+            it.context.startActivity(intent)
+        }
     }
 }
